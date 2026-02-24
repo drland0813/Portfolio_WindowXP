@@ -1,0 +1,68 @@
+.taskbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+
+    background: linear-gradient(#2a65c7, #1f4ea3);
+    border-top: 3px solid #6fa2ff;
+    box-shadow: inset 0 1px #ffffff33;
+}
+
+/* APP BUTTON */
+.taskbar-apps {
+    display: flex;
+    gap: 6px;
+    margin-left: 10px;
+}
+
+.taskbar-app {
+    background: linear-gradient(#4d8ff7, #2a65c7);
+    padding: 4px 12px;
+    border-radius: 3px;
+    color: white;
+    font-size: 10px;
+    font-family: Tahoma, sans-serif;
+    border: 1px solid #1a3e82;
+}
+
+.taskbar-app.active {
+    background: linear-gradient(#6aa6ff, #3a7be0);
+}
+
+.start-button {
+    background-image: url("/src/assets/windows/startButton__spriteSheet.png");
+    background-size: cover;
+    width: 95px;
+    height: 30px;
+    border: none;
+}
+.start-button:hover {
+    filter: brightness(1.1);
+}
+
+.clock {
+    margin-left: auto;
+    height: 100%;
+    padding: 0 14px;
+
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    font-family: Tahoma, sans-serif;
+    font-size: 10px;
+    color: white;
+
+    background: linear-gradient(#3b7be0, #1f4ea3);
+    border-left: 1px solid #6fa2ff;
+}
+
+.clock-icon {
+    font-size: 12px;
+    opacity: 0.9;
+}
