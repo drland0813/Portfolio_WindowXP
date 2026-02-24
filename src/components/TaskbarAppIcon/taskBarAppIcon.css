@@ -1,0 +1,13 @@
+.taskbar-app {
+    padding: 4px 10px;
+    margin: 0 4px;
+    background: #c0c0c0;
+    border: 1px solid #808080;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.taskbar-app.active {
+    background: #ffffff;
+    border-bottom: 2px solid blue;
+}

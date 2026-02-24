@@ -4,8 +4,8 @@
     width: 100vw;
     height: 100vh;
 
-    background-image: url("src/assets/windows/wallpaper__default.jpg");
-    background-size: cover;
+    background-size: cover;    background-image: url("src/assets/windows/wallpaper__default.jpg");
+
     background-position: center;
     background-repeat: no-repeat;
 

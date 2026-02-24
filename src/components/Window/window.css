@@ -1,0 +1,27 @@
+.window {
+    width: 1200px;
+    height: 500px;
+    background: #ece9d8;
+    border: 2px solid #0a246a;
+    z-index: 10;
+
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.window-header {
+    background: linear-gradient(#3a6ea5, #1f4e94);
+    color: white;
+    padding: 6px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.window-content {
+    background: white;
+    height: calc(100% - 30px);
+    padding: 10px;
+}

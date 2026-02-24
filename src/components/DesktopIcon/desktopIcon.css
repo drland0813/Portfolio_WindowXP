@@ -1,0 +1,31 @@
+.desktop-icon {
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* center icon + text */
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+    padding: 6px 4px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.desktop-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.desktop-icon span {
+    display: block;
+    margin-top: 4px;
+    font-size: 10px;
+    line-height: 14px;
+    word-break: break-word;
+}
+
+.desktop-icon:hover {
+    background: rgba(49, 106, 197, 0.4);
+    border: 1px dotted rgba(255, 255, 255, 0.7);
+}

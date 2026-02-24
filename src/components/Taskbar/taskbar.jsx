@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import "./taskbar.css";
 import StartMenu from "#components/StartMenu/startMenu.jsx";
+import TaskbarAppIcon from "#components/TaskbarAppIcon/taskbarAppIcon.jsx";
 
 
-const Taskbar = () => {
+const Taskbar = ({ isOpen, isMinimized, onRestore }) => {
     const [time, setTime] = useState("");
     const [openMenu, setOpenMenu] = useState(false);
 
@@ -33,6 +34,14 @@ const Taskbar = () => {
                     onClick={() => setOpenMenu(!openMenu)}
                 >
                 </button>
+                {/* ICON APP */}
+                {isOpen && (
+                    <TaskbarAppIcon
+                        title="My Showcase"
+                        active={!isMinimized}
+                        onClick={onRestore}
+                    />
+                )}
 
                 <div className="clock">{time}</div>
             </div>
