@@ -33,7 +33,7 @@ const Desktop = () => {
             {/* ICON */}
             <DesktopIcon
                 title="My Showcase"
-                icon="src/assets/windows/showcase_logo.png"
+                icon="/src/assets/windows/showcase_logo.png"
                 onDoubleClick={openDocs}
             />
 
